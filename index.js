@@ -22,3 +22,6 @@ very long`);
 
 let viewers = 10;
 console.log((viewers += 1));
+
+
+//Korey's Changes - Try to write your own data types and functions 
