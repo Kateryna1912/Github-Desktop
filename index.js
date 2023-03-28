@@ -1,24 +1,23 @@
-const greet = "Hello Students, Welcome to the second week!";
-console.log(greet);
+let loginDiv = document.createElement("div");
+loginDiv.className = "loginBox";
+document.body.appendChild(loginDiv);
 
-console.log(greet.replace("second", "2nd"));
-console.log(greet);
+let createH2 = document.createElement("h2");
+loginDiv.appendChild(createH2);
+createH2.innerHTML = "Login";
 
-const students = "Students";
-const index = greet.indexOf(students);
-console.log("The index of the word studets is " + index);
+let createForm = document.createElement("form");
+loginDiv.appendChild(createForm);
 
-console.log(greet.toUpperCase());
-console.log(`The length of the string is ${greet.length}`);
+let userNameDiv = document.createElement("div");
+createForm.appendChild(userNameDiv);
+userNameDiv.className = "userBox";
 
-const viewerCount = 50 * 2;
-console.log("The viewer count is " + viewerCount);
-console.log(`The viewer count is + ${viewerCount}`);
-console.log(`${viewerCount > 1 ? "great" : "not great"}`);
+let nameInput = document.createElement("input");
+userNameDiv.appendChild(nameInput);
+nameInput.type = "text";
+nameInput.required = "required";
 
-console.log("This story is\n" + "very long");
-console.log(`This story is
-very long`);
-
-let viewers = 10;
-console.log((viewers += 1));
+let userNameLabel = document.createElement("label");
+userNameDiv.appendChild(userNameLabel);
+userNameLabel.innerHTML = "Username";
